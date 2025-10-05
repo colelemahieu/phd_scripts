@@ -1,0 +1,10 @@
+Universe              = vanilla
+executable            = miniAOD_thesis_skim.sh
+arguments             = $(ProcId) 
+GetEnv                = True
+output                = condorLog/output/$(ClusterId).$(ProcId).out
+error                 = condorLog/error/$(ClusterId).$(ProcId).err
+log                   = condorLog/log/$(ClusterId).$(ProcId).log
++JobFlavour           = "workday"
+
+queue 13
